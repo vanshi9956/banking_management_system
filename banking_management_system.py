@@ -1,4 +1,4 @@
-from test import conn , cursor
+from database import conn , cursor
 def create_account():
     name=input("Enter your name: ")
     acc=input("Enter your account number: ")
@@ -41,7 +41,7 @@ def login():
                     balance=cursor.fetchone()
                     print("Your balance is: ", balance[0])
                 elif choice=='2':
-                    
+                        amount=int(input("enter amount to deposit: "))
                         cursor.execute(
                             "UPDATE accounts SET balance=balance+%s WHERE account_no=%s", (amount , acc))
                         conn.commit()
@@ -60,8 +60,7 @@ def login():
                             "UPDATE accounts SET balance=balance-%s WHERE account_no=%s", (amount , acc))
                         conn.commit()
                 
-                    print("Withdrawal successful. New balance is: ", user['balance'])
-                    
+                    print("Withdrawal successful.")
                 elif choice=='4':
                     print("Logout successful")
                     break      
