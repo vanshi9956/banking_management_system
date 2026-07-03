@@ -62,6 +62,7 @@ python banking_management_system.py
 ## Also made a GUI of this using Tinkter
 - use the same database file for it
 - it will show a user interface through which inputs are taken from windows now instead directly from console
+- sending our entry amount to the sql database and it is updated in the database the moment user clicks deposit
 ## Author
 
 **Vanshika Jain**
