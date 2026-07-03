@@ -59,7 +59,9 @@ python banking_management_system.py
 -   Fund Transfer
 -   Tkinter GUI
 -   OOP Version using `BankAccount` class
-
+## Also made a GUI of this using Tinkter
+- use the same database file for it
+- it will show a user interface through which inputs are taken from windows now instead directly from console
 ## Author
 
 **Vanshika Jain**
